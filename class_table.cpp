@@ -14,6 +14,13 @@ tabledata::~tabledata()
 		{
 			delete[] p[i];
 			p[i] = NULL;
+			cout << "destruction1" << endl;
 		}
-	cout << "xigou" << endl;
+	if (p != NULL)
+	{
+		delete[] p;
+		p = NULL;
+		cout << "destruction2" << endl;
+	}
+	
 }
